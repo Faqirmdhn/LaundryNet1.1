@@ -88,6 +88,20 @@
                 </div>
             </div>
         </div>
+        <!-- Diambil -->
+        <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                        Diambil
+                    </div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">
+                        {{ $diambil }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Pie Chart -->
         <div class="col-xl-12 col-lg-12">
             <div class="card shadow mb-4">
