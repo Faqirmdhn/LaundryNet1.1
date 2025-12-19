@@ -28,6 +28,6 @@ class Transaksi extends Model
     // RELASI KE LAYANAN
     public function layanan()
     {
-        return $this->belongsTo(Layanan::class);
+        return $this->belongsTo(Layanan::class, 'layanan_id', 'id');
     }
 }

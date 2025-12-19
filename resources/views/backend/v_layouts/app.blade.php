@@ -64,6 +64,13 @@
                     <span>Transaksi</span>
                 </a>
             </li>
+            <!-- transaksi -->
+            <li class="nav-item {{ request()->routeIs('backend.laporan*') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('backend.laporan.index') }}">
+                    <i class="fas fa-receipt"></i>
+                    <span>Laporan</span>
+                </a>
+            </li>
 
 
         </ul>

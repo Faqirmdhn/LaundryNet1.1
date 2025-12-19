@@ -6,6 +6,7 @@ use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\TransaksiController;
+use App\Http\Controllers\LaporanController;
 
 // ======================
 // REDIRECT UTAMA
@@ -47,4 +48,11 @@ Route::middleware('auth')->prefix('backend')->name('backend.')->group(function (
 
     // CRUD Transaksi
     Route::resource('transaksi', TransaksiController::class);
+
+    //laporan
+    Route::get('/laporan', [LaporanController::class, 'index'])
+        ->name('laporan.index');
+
+    Route::get('/laporan/pdf', [LaporanController::class, 'exportPdf'])
+        ->name('laporan.pdf');
 });
